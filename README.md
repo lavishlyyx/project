@@ -4,4 +4,4 @@ Active Directory is a centralized database that stores and manages information a
 
 During this project, I also had to troubleshoot several issues while setting up and connecting systems. These included fixing network configuration problems, adjusting static IP settings, resolving domain join errors, and ensuring that services like DNS and AD DS were running properly. These troubleshooting steps helped deepen my understanding of how Active Directory functions and how to solve real-world problems in a networked environment.
 
-
+https://github.com/lavishlyyx/project/blob/c31f5ad4123f17a56c687fb861fa8d79f10c4722/Screenshot%202026-06-18%20201023.png
