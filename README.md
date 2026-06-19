@@ -1,4 +1,4 @@
-Active Directory Proeject
+<img width="750" height="398" alt="image (3)" src="https://github.com/user-attachments/assets/e30b2211-b312-44ca-9e7f-7d7adc8c5292" />Active Directory Proeject
 
 Active Directory is a centralized database that stores and manages information about users, computers, and groups within a network. It allows administrators to organize and control access to network resources. To use Active Directory, a server must have the Active Directory Domain Services (AD DS) role installed and then be promoted to a Domain Controller. Once promoted, the server can handle authentication using the Kerberos protocol and manage authorization by applying policies and permissions across the domain.
 
@@ -116,9 +116,26 @@ With the forwarder and Sysmon installed and configured, both machines began send
 <img width="1448" height="1086" alt="ae7c4c6f-be10-404d-a31a-3398e802d366" src="https://github.com/user-attachments/assets/1d580b27-1355-4d92-aa23-3404647c41bb" />
 
 
+Installing and Configuring Active Directory
+
+The next step was to install and configure Active Directory on the Windows Server 2022. First, I set a static IP address for the server to 192.168.10.7 so it would have a fixed address on the network. Then, I added the Active Directory Domain Services (AD DS) role through the Server Manager. After the installation, I promoted the server to a domain controller and created a new domain named walid7866.local.
+
+Once the domain was set up, I moved on to creating users in Active Directory. I opened the Active Directory Users and Computers folder and created two organizational units (OUs): IT and HR. Inside the IT OU, I created a user named Elias Hawthorne, and in the HR OU, I created a user named Harry Brook.
+
+After that, I went to the Windows 10 target machine. I changed its network settings to connect to the walid7866.local domain. I used the credentials for Elias Hawthorne to authenticate and successfully joined the target machine to the domain.
+
+Now, both the server and the target machine are part of the same domain, and I can manage users and settings from the domain controller.
 
 
+<img width="750" height="398" alt="image (3)" src="https://github.com/user-attachments/assets/94a01707-ca5d-495d-aa3a-4de90ff5c5c5" />
+<img width="750" height="393" alt="image (4)" src="https://github.com/user-attachments/assets/880fbc31-63a0-4f69-9c4b-cacd7b92e6cc" />
+<img width="720" height="399" alt="image (3)" src="https://github.com/user-attachments/assets/c6478bec-4cef-42f8-a7f5-0ddcd8034f49" />
+<img width="786" height="412" alt="image (4)" src="https://github.com/user-attachments/assets/d2c0f2a0-d638-4157-882e-f5f4d22ed834" />
+<img width="649" height="241" alt="image (5)" src="https://github.com/user-attachments/assets/22db140a-ff2f-45bd-a223-2ce2befafa3a" />
+<img width="640" height="342" alt="image (6)" src="https://github.com/user-attachments/assets/8ccbab99-8bdc-4f02-bada-dec57e475bba" />
+<img width="593" height="348" alt="image (7)" src="https://github.com/user-attachments/assets/12f89e71-53b1-406b-9d2f-3cc0ed8074ec" />
 
+<img width="720" height="583" alt="image" src="https://github.com/user-attachments/assets/6ff78dbb-36a4-4f5c-845e-b608646a8770" />
 
 
 
