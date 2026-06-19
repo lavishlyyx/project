@@ -88,6 +88,39 @@ Thanks to the static IP setup, the Splunk Forwarders on both machines were able 
 
 
 
+<img width="640" height="340" alt="image (3)" src="https://github.com/user-attachments/assets/540a6cd7-2545-4d98-ac8b-2fd095f53d6f" />
+<img width="592" height="439" alt="image (4)" src="https://github.com/user-attachments/assets/de4f5b83-2b00-4ece-b719-8b5451de559d" />
+<img width="582" height="439" alt="image (5)" src="https://github.com/user-attachments/assets/62f15c8f-b59d-46ef-a9bf-37f03e812e23" />
+
+
+
+
+Using the Splunk Web Portal
+
+
+After setting up the Splunk server on the Ubuntu machine, I opened a web browser and went to the address 192.168.10.10:8000. This took me to the Splunk web portal, where I logged in to access the dashboard. From here, I could manage data, view logs, and check if everything was working correctly.
+
+Once I was inside the portal, I installed the Splunk Universal Forwarder on both the Windows 10 target machine and the Windows Server 2022. The forwarder is a tool that sends system logs to the Splunk server so I can view them all in one place. This step was important because without the forwarder, Splunk would not receive any data from those machines.
+
+After setting up the forwarder, I moved on to installing Sysmon. Sysmon is a tool that watches what is happening on the system, such as programs starting, files being changed, or network connections being made. It gives a lot of detailed logs that are useful for security monitoring.
+
+To make Sysmon work better, I also downloaded a special configuration file from GitHub called the Sysmon Olaf config. This file tells Sysmon exactly what to record and what to ignore, helping to reduce unnecessary logs and focus on important events. I used the same config on both the Windows 10 and Windows Server machines.
+
+With the forwarder and Sysmon installed and configured, both machines began sending useful logs to my Splunk server, where I could see and analyse them in real time.
+
+
+
+<img width="1448" height="1086" alt="3adf9942-2705-4bb5-bf85-635116e50493" src="https://github.com/user-attachments/assets/a00a1daa-2328-40c0-9c85-2741464c81fa" />
+<img width="1448" height="1086" alt="278822c6-46d1-4bd5-84e0-94e1f806121d" src="https://github.com/user-attachments/assets/e63b5417-fc66-47ff-b596-433f1d77f132" />
+<img width="1448" height="1086" alt="be1173fe-cce3-4db9-95de-8b017680b78d" src="https://github.com/user-attachments/assets/3c74b7bf-40e7-432e-996b-cf2c37b3d8e8" />
+<img width="1448" height="1086" alt="ae7c4c6f-be10-404d-a31a-3398e802d366" src="https://github.com/user-attachments/assets/1d580b27-1355-4d92-aa23-3404647c41bb" />
+
+
+
+
+
+
+
 
 
 
