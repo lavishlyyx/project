@@ -1,4 +1,4 @@
-<img width="750" height="398" alt="image (3)" src="https://github.com/user-attachments/assets/e30b2211-b312-44ca-9e7f-7d7adc8c5292" />Active Directory Proeject
+Active Directory Proeject
 
 Active Directory is a centralized database that stores and manages information about users, computers, and groups within a network. It allows administrators to organize and control access to network resources. To use Active Directory, a server must have the Active Directory Domain Services (AD DS) role installed and then be promoted to a Domain Controller. Once promoted, the server can handle authentication using the Kerberos protocol and manage authorization by applying policies and permissions across the domain.
 
